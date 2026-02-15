@@ -1,11 +1,11 @@
-function getPreviewPathname(uid: string, { locale, document }: { locale?: string; document?: { slug?: string } }) {
+function getPreviewPathname(uid: string, { locale, document }: { locale?: string; document?: Record<string, unknown> }) {
   switch (uid) {
     case 'api::homepage.homepage':
       return '/';
     case 'api::page.page':
-      return document?.slug ? `/${document.slug}` : null;
+      return document?.slug ? `/${document.slug as string}` : null;
     case 'api::legal-page.legal-page':
-      return document?.slug ? `/legal/${document.slug}` : null;
+      return document?.slug ? `/legal/${document.slug as string}` : null;
     default:
       return null;
   }
