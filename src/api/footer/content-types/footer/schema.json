@@ -1,0 +1,37 @@
+{
+  "kind": "singleType",
+  "collectionName": "footers",
+  "info": {
+    "singularName": "footer",
+    "pluralName": "footers",
+    "displayName": "Footer",
+    "description": "Footer content"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "description": {
+      "type": "text"
+    },
+    "ageWarning": {
+      "type": "string"
+    },
+    "ageDetail": {
+      "type": "text"
+    },
+    "copyright": {
+      "type": "string"
+    },
+    "discordUrl": {
+      "type": "string"
+    },
+    "youtubeUrl": {
+      "type": "string"
+    },
+    "telegramUrl": {
+      "type": "string"
+    }
+  }
+}
