@@ -15,8 +15,7 @@
     "title": { "type": "string", "required": true },
     "slug": { "type": "uid", "targetField": "title", "required": true },
     "excerpt": { "type": "text" },
-    "content": { "type": "blocks" },
-    "featuredImage": {
+"featuredImage": {
       "type": "media",
       "allowedTypes": ["images"],
       "multiple": false
@@ -45,9 +44,7 @@
     "releaseDate": { "type": "date" },
     "theme": { "type": "string" },
     "features": { "type": "text" },
-    "youtubeVideoId": { "type": "string" },
-    "youtubeVideoTitle": { "type": "string" },
-    "ctaLabel": { "type": "string", "default": "Jouer maintenant" },
+"ctaLabel": { "type": "string", "default": "Jouer maintenant" },
     "ctaUrl": { "type": "string" },
     "subtitle": { "type": "string" },
     "rating": {
