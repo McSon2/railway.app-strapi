@@ -1,0 +1,53 @@
+{
+  "kind": "collectionType",
+  "collectionName": "articles",
+  "info": {
+    "singularName": "article",
+    "pluralName": "articles",
+    "displayName": "Article",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": { "type": "string", "required": true },
+    "slug": { "type": "uid", "targetField": "title", "required": true },
+    "excerpt": { "type": "text" },
+    "content": { "type": "blocks" },
+    "featuredImage": {
+      "type": "media",
+      "allowedTypes": ["images"],
+      "multiple": false
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    },
+    "slotName": { "type": "string" },
+    "providerName": { "type": "string" },
+    "providerLogo": {
+      "type": "media",
+      "allowedTypes": ["images"],
+      "multiple": false
+    },
+    "rtp": { "type": "decimal" },
+    "volatility": {
+      "type": "enumeration",
+      "enum": ["low", "medium", "medium-high", "high", "extreme"]
+    },
+    "maxWin": { "type": "string" },
+    "minBet": { "type": "decimal" },
+    "maxBet": { "type": "decimal" },
+    "paylines": { "type": "string" },
+    "releaseDate": { "type": "date" },
+    "theme": { "type": "string" },
+    "features": { "type": "text" },
+    "youtubeVideoId": { "type": "string" },
+    "youtubeVideoTitle": { "type": "string" },
+    "ctaLabel": { "type": "string", "default": "Jouer maintenant" },
+    "ctaUrl": { "type": "string" }
+  }
+}

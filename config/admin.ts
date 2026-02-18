@@ -6,6 +6,8 @@ function getPreviewPathname(uid: string, { locale, document }: { locale?: string
       return document?.slug ? `/${document.slug as string}` : null;
     case 'api::legal-page.legal-page':
       return document?.slug ? `/legal/${document.slug as string}` : null;
+    case 'api::article.article':
+      return document?.slug ? `/blog/${document.slug as string}` : null;
     default:
       return null;
   }
