@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_shared_casino_options",
+  "info": {
+    "displayName": "Casino Option",
+    "icon": "database",
+    "description": "Casino affiliate option with bonus and CTA"
+  },
+  "options": {},
+  "attributes": {
+    "casinoName": {
+      "type": "string",
+      "required": true
+    },
+    "casinoLogo": {
+      "type": "media",
+      "allowedTypes": ["images"],
+      "multiple": false
+    },
+    "bonusDescription": {
+      "type": "string"
+    },
+    "promoCode": {
+      "type": "string"
+    },
+    "affiliateUrl": {
+      "type": "string",
+      "required": true
+    },
+    "ctaLabel": {
+      "type": "string",
+      "default": "Jouer"
+    }
+  }
+}

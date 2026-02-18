@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_shared_youtube_videos",
+  "info": {
+    "displayName": "YouTube Video",
+    "icon": "play",
+    "description": "YouTube video embed"
+  },
+  "options": {},
+  "attributes": {
+    "videoId": {
+      "type": "string",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

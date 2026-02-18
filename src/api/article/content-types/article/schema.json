@@ -48,6 +48,30 @@
     "youtubeVideoId": { "type": "string" },
     "youtubeVideoTitle": { "type": "string" },
     "ctaLabel": { "type": "string", "default": "Jouer maintenant" },
-    "ctaUrl": { "type": "string" }
+    "ctaUrl": { "type": "string" },
+    "subtitle": { "type": "string" },
+    "rating": {
+      "type": "integer",
+      "min": 1,
+      "max": 5
+    },
+    "personalOpinion": { "type": "blocks" },
+    "mechanicsContent": { "type": "blocks" },
+    "youtubeVideos": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.youtube-video"
+    },
+    "youtubePlaylistUrl": { "type": "string" },
+    "faq": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.faq-item"
+    },
+    "casinos": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.casino-option"
+    }
   }
 }
