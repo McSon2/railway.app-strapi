@@ -1,9 +1,15 @@
+const GAME_SLUGS = new Set(['blackjack', 'plinko', 'jackpot', 'paris-sportifs', 'nolimit-slots']);
+
 function getPreviewPathname(uid: string, { locale, document }: { locale?: string; document?: Record<string, unknown> }) {
   switch (uid) {
     case 'api::homepage.homepage':
       return '/';
-    case 'api::page.page':
-      return document?.slug ? `/${document.slug as string}` : null;
+    case 'api::page.page': {
+      const slug = document?.slug as string | undefined;
+      if (!slug) return null;
+      if (GAME_SLUGS.has(slug)) return `/games/${slug}`;
+      return `/${slug}`;
+    }
     case 'api::legal-page.legal-page':
       return document?.slug ? `/legal/${document.slug as string}` : null;
     case 'api::article.article':
