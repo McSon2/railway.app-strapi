@@ -1,19 +1,35 @@
 const GAME_SLUGS = new Set(['blackjack', 'plinko', 'jackpot', 'paris-sportifs', 'nolimit-slots']);
 
+/** Map Strapi locale to URL prefix */
+function getLocalePrefix(locale?: string): string {
+  if (!locale || locale === 'fr') return '';
+  // fr-CA → /fr-ca
+  return `/${locale.toLowerCase()}`;
+}
+
 function getPreviewPathname(uid: string, { locale, document }: { locale?: string; document?: Record<string, unknown> }) {
+  const prefix = getLocalePrefix(locale);
   switch (uid) {
     case 'api::homepage.homepage':
-      return '/';
+      return `${prefix}/`;
     case 'api::page.page': {
       const slug = document?.slug as string | undefined;
       if (!slug) return null;
-      if (GAME_SLUGS.has(slug)) return `/games/${slug}`;
-      return `/${slug}`;
+      if (GAME_SLUGS.has(slug)) return `${prefix}/games/${slug}`;
+      return `${prefix}/${slug}`;
     }
     case 'api::legal-page.legal-page':
-      return document?.slug ? `/legal/${document.slug as string}` : null;
+      return document?.slug ? `${prefix}/legal/${document.slug as string}` : null;
     case 'api::article.article':
-      return document?.slug ? `/slots/${document.slug as string}` : null;
+      return document?.slug ? `${prefix}/slots/${document.slug as string}` : null;
+    case 'api::blog-post.blog-post':
+      return document?.slug ? `${prefix}/blog/${document.slug as string}` : null;
+    case 'api::guide.guide':
+      return document?.slug ? `${prefix}/guides/${document.slug as string}` : null;
+    case 'api::stake-page.stake-page':
+      return document?.slug ? `${prefix}/stake/${document.slug as string}` : null;
+    case 'api::provider.provider':
+      return document?.slug ? `${prefix}/fournisseurs/${document.slug as string}` : null;
     default:
       return null;
   }
