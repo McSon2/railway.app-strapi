@@ -5,7 +5,11 @@
     "icon": "search",
     "description": "SEO metadata component"
   },
-  "options": {},
+  "options": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "metaTitle": {
       "type": "string",

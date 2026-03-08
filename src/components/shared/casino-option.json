@@ -5,7 +5,11 @@
     "icon": "database",
     "description": "Casino affiliate option with bonus and CTA"
   },
-  "options": {},
+  "options": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "casinoName": {
       "type": "string",

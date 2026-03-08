@@ -5,7 +5,11 @@
     "icon": "question",
     "description": "Question/Answer pair for FAQ sections"
   },
-  "options": {},
+  "options": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "question": {
       "type": "string",

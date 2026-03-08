@@ -5,7 +5,11 @@
     "icon": "star",
     "description": "Feature item with icon, title and description"
   },
-  "options": {},
+  "options": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "icon": {
       "type": "string",

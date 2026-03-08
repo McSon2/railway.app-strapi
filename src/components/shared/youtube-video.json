@@ -5,7 +5,11 @@
     "icon": "play",
     "description": "YouTube video embed"
   },
-  "options": {},
+  "options": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "videoId": {
       "type": "string",
