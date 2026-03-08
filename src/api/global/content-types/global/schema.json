@@ -14,18 +14,21 @@
   "attributes": {
     "siteName": {
       "type": "string",
-      "default": "Anthosaure"
+      "default": "Anthosaure",
+      "pluginOptions": { "i18n": { "localized": true } }
     },
     "defaultSeo": {
       "type": "component",
       "repeatable": false,
-      "component": "shared.seo"
+      "component": "shared.seo",
+      "pluginOptions": { "i18n": { "localized": true } }
     },
     "favicon": {
       "type": "media",
       "multiple": false,
       "required": false,
-      "allowedTypes": ["images"]
+      "allowedTypes": ["images"],
+      "pluginOptions": { "i18n": { "localized": true } }
     }
   }
 }
