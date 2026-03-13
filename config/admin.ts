@@ -56,7 +56,7 @@ export default ({ env }) => ({
     config: {
       allowedOrigins: env('CLIENT_URL', 'https://anthosaure-git-dev-maxime-saltets-projects.vercel.app'),
       async handler(uid, { documentId, locale, status }) {
-        const document = await strapi.documents(uid).findOne({ documentId });
+        const document = await strapi.documents(uid).findOne({ documentId, locale });
         const pathname = getPreviewPathname(uid, { locale, document });
 
         if (!pathname) return null;
