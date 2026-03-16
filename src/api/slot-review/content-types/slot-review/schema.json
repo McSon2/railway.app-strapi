@@ -229,13 +229,10 @@
         }
       }
     },
-    "relatedSlotsJson": {
-      "type": "json",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
+    "relatedSlots": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::slot-review.slot-review"
     },
     "seo": {
       "type": "component",
