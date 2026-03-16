@@ -33,23 +33,7 @@
         }
       }
     },
-    "statsReviewed": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
     "statsSessions": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "statsProviders": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -59,22 +43,6 @@
     },
     "introContent": {
       "type": "blocks",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "authorName": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "authorDescription": {
-      "type": "string",
       "pluginOptions": {
         "i18n": {
           "localized": true
