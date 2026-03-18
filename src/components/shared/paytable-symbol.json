@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_shared_paytable_symbols",
+  "info": {
+    "displayName": "Paytable Symbol",
+    "description": "A symbol row in a slot paytable"
+  },
+  "attributes": {
+    "symbol": {
+      "type": "string",
+      "required": true
+    },
+    "pay8": {
+      "type": "string",
+      "required": true
+    },
+    "pay10": {
+      "type": "string",
+      "required": true
+    },
+    "pay12plus": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

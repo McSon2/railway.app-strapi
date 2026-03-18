@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_shared_comparison_rows",
+  "info": {
+    "displayName": "Comparison Row",
+    "description": "A single row in a comparison table (e.g. original vs 1000)"
+  },
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "originalValue": {
+      "type": "string",
+      "required": true
+    },
+    "newValue": {
+      "type": "string",
+      "required": true
+    },
+    "isHighlighted": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

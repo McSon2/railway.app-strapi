@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_shared_session_tips",
+  "info": {
+    "displayName": "Session Tip",
+    "description": "A numbered tip for bankroll/session management"
+  },
+  "attributes": {
+    "number": {
+      "type": "string",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    }
+  }
+}
