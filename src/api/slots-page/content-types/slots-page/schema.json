@@ -41,14 +41,6 @@
         }
       }
     },
-    "introContent": {
-      "type": "blocks",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
     "rgText": {
       "type": "text",
       "pluginOptions": {
