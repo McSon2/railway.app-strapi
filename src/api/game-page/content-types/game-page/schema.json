@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "game_pages",
+  "info": {
+    "singularName": "game-page",
+    "pluralName": "game-pages",
+    "displayName": "Game Page",
+    "description": "SEO content (description, FAQ) for individual game pages"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": { "i18n": { "localized": true } },
+  "attributes": {
+    "slug": {
+      "type": "uid",
+      "required": true,
+      "pluginOptions": { "i18n": { "localized": true } }
+    },
+    "title": {
+      "type": "string",
+      "pluginOptions": { "i18n": { "localized": true } }
+    },
+    "description": {
+      "type": "richtext",
+      "pluginOptions": { "i18n": { "localized": true } }
+    },
+    "faq": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.faq-item",
+      "pluginOptions": { "i18n": { "localized": true } }
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo",
+      "pluginOptions": { "i18n": { "localized": true } }
+    }
+  }
+}
