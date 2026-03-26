@@ -43,7 +43,7 @@
         }
       }
     },
-    "slotsLaunchName": {
+    "slotsLaunchId": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
