@@ -363,6 +363,14 @@
           "localized": true
         }
       }
+    },
+    "slotsLaunchName": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
     }
   }
 }
