@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "provider_pages",
+  "info": {
+    "singularName": "provider-page",
+    "pluralName": "provider-pages",
+    "displayName": "Provider Page",
+    "description": "SEO content (description, FAQ) for provider listing pages (/games/[providerId])"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": { "i18n": { "localized": true } },
+  "attributes": {
+    "slug": {
+      "type": "uid",
+      "required": true,
+      "pluginOptions": { "i18n": { "localized": true } }
+    },
+    "title": {
+      "type": "string",
+      "pluginOptions": { "i18n": { "localized": true } }
+    },
+    "description": {
+      "type": "richtext",
+      "pluginOptions": { "i18n": { "localized": true } }
+    },
+    "faq": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.faq-item",
+      "pluginOptions": { "i18n": { "localized": true } }
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo",
+      "pluginOptions": { "i18n": { "localized": true } }
+    }
+  }
+}
