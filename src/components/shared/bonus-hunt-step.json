@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_shared_bonus_hunt_steps",
+  "info": {
+    "displayName": "Bonus Hunt Step",
+    "icon": "bulletList",
+    "description": "A numbered step for bonus hunt guide"
+  },
+  "options": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "badge": {
+      "type": "string",
+      "required": true
+    },
+    "badgeColor": {
+      "type": "enumeration",
+      "enum": ["teal", "blue", "orange"],
+      "required": true,
+      "default": "teal"
+    }
+  }
+}

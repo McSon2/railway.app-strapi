@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_shared_stat_explanations",
+  "info": {
+    "displayName": "Stat Explanation",
+    "icon": "chartBubble",
+    "description": "A stat explanation card with title and description"
+  },
+  "options": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

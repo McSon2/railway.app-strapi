@@ -1,0 +1,50 @@
+{
+  "kind": "singleType",
+  "collectionName": "bonus_hunt_pages",
+  "info": {
+    "singularName": "bonus-hunt-page",
+    "pluralName": "bonus-hunt-pages",
+    "displayName": "Bonus Hunt Page",
+    "description": "Sections structurées de la page bonus hunt (features, étapes, stats)"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.feature",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "steps": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.bonus-hunt-step",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "statsExplanation": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.stat-explanation",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}
